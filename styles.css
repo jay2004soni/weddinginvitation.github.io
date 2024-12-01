@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section with Custom Background Image */
+.hero {
+    height: 100vh;
+    background: url('marriage-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    padding: 4rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    animation: buttonAnimation 1s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Animation */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Services Section */
+#services {
+    background-color: #f8f9fa;
+}
+
+#services .card {
+    border-radius: 10px;
+}
+
+#services .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#services .card-body {
+    padding: 1.5rem;
+}
+
+#services .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#services .card-text {
+    font-size: 1rem;
+}
+
+/* About Section */
+#about {
+    background-color: #f1f1f1;
+}
+
+#about .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+#about .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .services .card {
+        margin-bottom: 2rem;
+    }
+
+    .card-body {
+        font-size: 1rem;
+    }
+}
